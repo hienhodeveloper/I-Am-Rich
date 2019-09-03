@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +13,42 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="I_Am_Rich" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="Etg-hZ-WOu">
+                                <rect key="frame" x="240" y="104" width="187.5" height="167"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcq-1A-VHe">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="104"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I Am Rich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yrt-VH-9ec">
+                                        <rect key="frame" x="214" y="21" width="239" height="63"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="60"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Yrt-VH-9ec" firstAttribute="centerX" secondItem="dcq-1A-VHe" secondAttribute="centerX" id="dVX-hq-fjP"/>
+                                    <constraint firstItem="Yrt-VH-9ec" firstAttribute="centerY" secondItem="dcq-1A-VHe" secondAttribute="centerY" id="ea4-2M-nyV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Etg-hZ-WOu" firstAttribute="top" secondItem="dcq-1A-VHe" secondAttribute="bottom" id="7JM-T6-e7Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dcq-1A-VHe" secondAttribute="trailing" id="ErI-gf-hyZ"/>
+                            <constraint firstItem="Etg-hZ-WOu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UaL-nf-A0A"/>
+                            <constraint firstItem="Etg-hZ-WOu" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="k8c-Dz-SrY"/>
+                            <constraint firstItem="dcq-1A-VHe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="n0u-pi-NcY"/>
+                            <constraint firstItem="Etg-hZ-WOu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:4" id="oa0-Ge-fpp"/>
+                            <constraint firstItem="dcq-1A-VHe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qQe-aJ-fsI"/>
+                            <constraint firstItem="Etg-hZ-WOu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="z5h-eO-mve"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -21,4 +56,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="diamond" width="343" height="251"/>
+    </resources>
 </document>
